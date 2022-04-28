@@ -10,7 +10,7 @@
   <a href="https://hub.docker.com/repository/docker/dvdblk/custom-default-backend" alt="Docker Image size">
     <img src="https://img.shields.io/docker/image-size/dvdblk/custom-default-backend?sort=date"/>
   </a>
-  <a href="custom-default-backend/LICENSE" alt="GitHub License">
+  <a href="LICENSE" alt="GitHub License">
     <img src="https://img.shields.io/github/license/dvdblk/custom-default-backend"/>
   </a>
 </p>
