@@ -1,19 +1,59 @@
-# Custom Default Backend for Nginx Ingress Controller
+# Custom Default Backend for NGINX Ingress Controller
 
-This repo contains the code and setup files that work with the latest **Helm** installation of [Nginx Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/#using-helm). 
+<p align="center">
+  <a href="https://hub.docker.com/repository/docker/dvdblk/custom-default-backend" alt="Docker Version">
+    <img src="https://img.shields.io/docker/v/dvdblk/custom-default-backend"/>
+  </a>
+  <a href="https://hub.docker.com/repository/docker/dvdblk/custom-default-backend" alt="Docker Pulls">
+    <img src="https://img.shields.io/docker/pulls/dvdblk/custom-default-backend"/>
+  </a>
+  <a href="https://hub.docker.com/repository/docker/dvdblk/custom-default-backend" alt="Docker Image size">
+    <img src="https://img.shields.io/docker/image-size/dvdblk/custom-default-backend?sort=date"/>
+  </a>
+  <a href="custom-default-backend/LICENSE" alt="GitHub License">
+    <img src="https://img.shields.io/github/license/dvdblk/custom-default-backend"/>
+  </a>
+</p>
+
+Customize the default backend for an NGINX Ingress Controller on your kubernetes cluster. A single Docker image with an NGINX server that handles most status codes.
 
 
-To integrate with Helm: 
-  * Create the k8s resources: 
-  ```
-  kubectl apply -f custom_default_backend.yaml
-  ```
-  * Delete previous Nginx Ingress Controller Helm installation: 
-  ```
-  helm delete nginx-ingress -n ingress-nginx
-  ```
-  * Install it again with proper `--set` flags: 
-  ```
-  helm install nginx-ingress --namespace ingress-nginx stable/nginx-ingress --set defaultBackend.enabled=false,controller.defaultBackendService=ingress-nginx/custom-default-backend
-  ```
-  
+## Installation via Helm
+You can use the `defaultBackend` property of the [ingress-nginx](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx) helm chart like this:
+
+```
+defaultBackend:
+  enabled: true
+  image:
+    # Or your own forked one...
+    repository: dvdblk/custom-default-backend
+    tag: "latest"
+    pullPolicy: Always
+  port: 8080
+```
+
+## HTML Customization
+
+Fork this repository and edit the HTML inside the `content/` directory if you want some CSS / text customization.
+
+If you wish to have a different HTML error page per status code you can omit the `ssi` part and set up the error pages (e.g. `content/404.html`, `content/500.html`) like this:
+
+```
+# default.conf
+
+server {
+  # ...
+
+  error_page 400 /404.html;
+  location = /404.html {
+    internal;
+  }
+
+  error_page 500 /500.html;
+  location = /500.html {
+    internal;
+  }
+
+  # ...
+}
+```

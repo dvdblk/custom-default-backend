@@ -7,8 +7,8 @@ RUN rm /etc/nginx/nginx.conf && \
     ln -sf /dev/stderr /var/log/nginx/error.log
 
 # NGINX Config
-COPY ./nginx.conf /etc/nginx/nginx.conf
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY etc/nginx.conf /etc/nginx/nginx.conf
+COPY etc/default.conf /etc/nginx/conf.d/default.conf
 
 # Resources
 COPY content/ /var/www/html/
