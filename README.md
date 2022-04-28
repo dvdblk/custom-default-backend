@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://hub.docker.com/repository/docker/dvdblk/custom-default-backend" alt="Docker Version">
-    <img src="https://img.shields.io/docker/v/dvdblk/custom-default-backend?sort=semver"/>
+    <img src="https://img.shields.io/docker/v/dvdblk/custom-default-backend?label=version&sort=semver"/>
   </a>
   <a href="https://hub.docker.com/repository/docker/dvdblk/custom-default-backend" alt="Docker Pulls">
     <img src="https://img.shields.io/docker/pulls/dvdblk/custom-default-backend"/>
