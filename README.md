@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/docker/image-size/dvdblk/custom-default-backend?sort=date"/>
   </a>
   <a href="LICENSE" alt="GitHub License">
-    <img src="https://img.shields.io/github/license/dvdblk/custom-default-backend"/>
+    <img src="https://img.shields.io/github/license/dvdblk/custom-default-backend?label=license"/>
   </a>
 </p>
 
