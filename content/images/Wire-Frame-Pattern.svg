@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1325px" height="1064px" viewBox="0 0 1325 1064" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Wire-Frame-Pattern</title>
+    <defs>
+        <linearGradient x1="50%" y1="51.2954682%" x2="50%" y2="85.7307067%" id="linearGradient-1">
+            <stop stop-color="#7FB1ED" offset="0%"></stop>
+            <stop stop-color="#7FB1ED" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="51.2954682%" x2="50%" y2="85.7307067%" id="linearGradient-2">
+            <stop stop-color="#7FB1ED" offset="0%"></stop>
+            <stop stop-color="#7FB1ED" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="51.2954682%" x2="50%" y2="85.7307067%" id="linearGradient-3">
+            <stop stop-color="#7FB1ED" offset="0%"></stop>
+            <stop stop-color="#7FB1ED" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Home_Desktop_R5" transform="translate(-68.000000, -1206.000000)">
+            <g id="Wire-Frame-Pattern" transform="translate(69.000000, 1206.000000)">
+                <path d="M693,1064 C693,975.090268 693,755.255427 693,404.495476 C693,385.383845 683.888668,367.416151 668.469492,356.132378 L519.054604,246.781241 C510.006789,240.160872 499.318496,236.908761 488.649915,236.994693 C477.983524,236.908761 467.295231,240.160872 458.247416,246.781241 L320.493281,347.598873 C313.681684,352.586612 304.425798,352.586612 297.614201,347.598873 L234.752584,301.595966 C225.706959,294.975597 215.016476,291.721295 204.350085,291.808953 C193.681504,291.721295 182.995401,294.975597 173.947586,301.595966 L24.5305083,410.947103 C9.11352187,422.230876 0,440.196379 0,459.310201 L0,1064" id="Stroke-1" stroke="url(#linearGradient-1)"></path>
+                <path d="M1323,1061.98842 L1323,162.109919 C1323,143.724654 1314.21532,126.441818 1299.35076,115.589107 L1155.30697,10.4036009 C1146.58459,4.03353128 1136.28102,0.906406201 1126.00107,0.988419258 C1115.71898,0.906406201 1105.41541,4.03353128 1096.69303,10.4036009 L952.649238,115.589107 C937.786826,126.441818 929,143.724654 929,162.109919 L929,1061.98842" id="Stroke-1" stroke="url(#linearGradient-2)"></path>
+                <path d="M846,1064 L846,540.897814 C846,529.270564 840.448262,518.340514 831.054162,511.477018 L740.021407,444.955364 C734.509043,440.926791 727.997394,438.949127 721.500679,438.996377 C715.002606,438.949127 708.490957,440.926791 702.978593,444.955364 L611.945838,511.477018 C602.553096,518.340514 597,529.270564 597,540.897814 L597,1064" id="Stroke-1-Copy" stroke="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

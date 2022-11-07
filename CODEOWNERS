@@ -1,0 +1,28 @@
+
+# CODEOWNERS
+#
+# Code owners are automatically requested for review when someone opens a pull
+# request that modifies code that they own. Code owners are not automatically
+# requested to review draft pull requests. When you mark a draft pull request
+# as ready for review, code owners are automatically notified. If you convert a
+# pull request to a draft, people who are already subscribed to notifications
+# are not automatically unsubscribed.
+#
+# When someone with admin or owner permissions has enabled required reviews,
+# they also can optionally require approval from a code owner before the author
+# can merge a pull request in the repository.
+#
+# If a team has enabled code review assignments, the individual approvals won't
+# satisfy the requirement for code owner approval in a protected branch.
+#
+# If a file has a code owner, you can see who the code owner is before you open
+# a pull request.
+#
+# NOTE: Order is important; the last matching pattern takes the most precedence.
+#
+# Additional Resources:
+# https://github.com/orgs/StatesTitle/teams
+# https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+# Unless otherwise specified, everyone owns everything.
+* @StatesTitle/cloud-platform
