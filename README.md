@@ -17,7 +17,9 @@
 
 Customize the default backend for an NGINX Ingress Controller on your kubernetes cluster. A single Docker image with an NGINX server that handles most status codes.
 
-[LIVE Preview](https://auth.dvdblk.com/thispagedoesntexist) for a 404 status code.
+[LIVE Preview - 404 status code](https://dvdblk.com/thispagedoesntexist)
+
+[LIVE Preview - 403 status code](https://auth.dvdblk.com/thispageisforbiddenandalsodoesntexist)
 
 ## Installation via Helm
 You can use the `defaultBackend` property of the [ingress-nginx](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx) helm chart like this:
