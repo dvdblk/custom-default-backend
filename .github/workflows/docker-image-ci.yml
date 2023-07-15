@@ -22,9 +22,6 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            # DockerHub
-            ${{ env.IMAGE_NAME }}
-            # GHCR
             ${{ env.GHCR }}/${{ env.IMAGE_NAME }}
 
       - name: Log in to Docker Hub
